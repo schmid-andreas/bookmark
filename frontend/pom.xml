@@ -42,6 +42,9 @@
             <goals>
               <goal>npm</goal>
             </goals>
+            <configuration>
+              <arguments>install</arguments>
+            </configuration>
           </execution>
           <execution>
             <id>npm run build</id>
@@ -50,17 +53,6 @@
             </goals>
             <configuration>
               <arguments>run build</arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>yarn test</id>
-            <goals>
-              <goal>yarn</goal>
-            </goals>
-            <phase>test</phase>
-            <configuration>
-              <arguments>test --watch false</arguments>
-              <failOnError>true</failOnError>
             </configuration>
           </execution>
         </executions>
