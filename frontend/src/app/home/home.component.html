@@ -1,0 +1,12 @@
+
+<div id="home">
+  <mat-tab-group>
+    <mat-tab *ngFor="let category of categories"
+             [label]="category.name || 'nothing'"
+    ><div style="width: 100%;display: block">
+      <app-link-table [id]="category.id"></app-link-table>
+    </div></mat-tab>
+  </mat-tab-group>
+
+</div>
+
